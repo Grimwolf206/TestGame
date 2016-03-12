@@ -11,11 +11,16 @@ package testgame;
  */
 public class TestGame {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static GUI consoleGui;
+    public static ConsoleInput consoleInput;
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        consoleGui = new GUI();
+        consoleInput = new ConsoleInput();
+        
+        consoleGui.add(consoleInput);
     }
     
+
 }
+
